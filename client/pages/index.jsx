@@ -17,7 +17,11 @@ export default function Home() {
   const particlesParam = {
     particles: {
       number: {
-        value: 100,
+        value: 75,
+        density: {
+          enable: true,
+          value_area: 1150
+        }
       },
       size: {
         value: 3,

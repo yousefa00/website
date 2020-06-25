@@ -133,6 +133,9 @@ code {
 .greeting {
   animation: move-greeting 2.5s;
   animation-fill-mode: forwards;
+  font-size: 7vw;
+  display: inline-block;
+  margin-right: 1vw;
 }
 
 @keyframes move-greeting {
@@ -162,6 +165,7 @@ span.wave {
   animation-delay: 0s;
   transform-origin: 70% 70%;
   display: inline-block;
+  font-size: 7vw;
 }
 
 @keyframes wave-animation {

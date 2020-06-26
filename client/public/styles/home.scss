@@ -57,8 +57,15 @@ a {
 
 .title {
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  animation: move-title-up 3.5s ease 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-title-up {
+  100% {
+    transform: translate(0vw, -30vh);
+    opacity: .5;
+  }
 }
 
 .title,
@@ -138,14 +145,17 @@ code {
 }
 
 .greeting {
-  animation: move-greeting 2.5s;
+  animation: move-greeting-right;
+  animation-duration: 2.5s;
+  animation-delay: 0s;
   animation-fill-mode: forwards;
-  font-size: 7vw;
+  font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
   display: inline-block;
   margin-right: 1vw;
 }
 
-@keyframes move-greeting {
+@keyframes move-greeting-right {
   from {
     margin-left: -70%;
     opacity: 0;
@@ -172,7 +182,8 @@ span.wave {
   animation-delay: 0s;
   transform-origin: 70% 70%;
   display: inline-block;
-  font-size: 7vw;
+  font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
 }
 
 @keyframes wave-animation {

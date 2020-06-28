@@ -20,8 +20,8 @@ export default function Home() {
         value: 75,
         density: {
           enable: true,
-          value_area: 1150
-        }
+          value_area: 1150,
+        },
       },
       size: {
         value: 3,

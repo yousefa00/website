@@ -64,7 +64,7 @@ a {
 @keyframes move-title-up {
   100% {
     transform: translate(0vw, -30vh);
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 
@@ -150,7 +150,7 @@ code {
   animation-delay: 0s;
   animation-fill-mode: forwards;
   font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
   display: inline-block;
   margin-right: 1vw;
 }
@@ -183,7 +183,7 @@ span.wave {
   transform-origin: 70% 70%;
   display: inline-block;
   font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
 }
 
 @keyframes wave-animation {
